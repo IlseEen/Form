@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My test form</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logosection">
+                <img src="logo.png" alt="brain logo" class="image" id="logo">
+                <h1>Cats&Dogs</h1>
+            </div>
+            <div class="footer">Images: myself</div>
+        </div>
+
+        <div class="formulier">
+            <div class="introtext"> It is said that there are cat-people and dog-people.
+                However, there must be people that love both. You can now create your
+                personalized animal account and choose yourself.
+                <div class="heading">It Is About Time!</div>  
+            </div>
+            <form name="animalform" method="post">
+                <div class="inputpart">
+                    <div class="inputt">
+                        <label for="firstName">First name</label>
+                        <input id="firstName" placeholder="Enter your first name *" name="firstName" type="text" value="" pattern="^[^0-9]+$" size="40" maxlength="145" required>
+                    </div>
+                    <div class="inputt">
+                        <label for="lastName">Last name</label>
+                        <input id="lastName" placeholder="Enter your last name *" name="lastName" type="text" value="" pattern="^[^0-9]+$" size="40" maxlength="145" required>
+                    </div>
+                    <div class="inputt">
+                        <label for="email" data-help="Format email@email.com">Email</label>
+                        <input id="email" placeholder="Enter your Email *" name="email" type="email" value="" size="40" maxlength="100" aria-describedby="email-notes" required>
+                    </div>
+                    <div class="inputt">
+                        <label for="password">Password minimum 8 characters</label>
+                        <input id="password" placeholder="Insert your password * min 8 characters" name="password" type="password" minlength="8" maxlength="50" required>
+                    </div>
+                    <div class="inputt">  
+                        <label for="repeatPassword">Confirm password</label>
+                        <input id="repeatPassword" placeholder="Confirm your password" name="repeatPassword" type="password" minlength="8" maxlength="50" required>
+                    </div>
+                    <div class="inputt">  
+                        <label for="animals">Choose your animal:</label>
+                        <select name="animal" id="animals">
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="both">Both</option>
+                            <option value="other">Other</option>
+                            <option value="none">I don't like animals</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="button">Create account</button>
+                
+                <br><br>
+                <p>Already have an account?       
+                <a href="default.asp" target="_blank" id="loginlink">Log in</a>
+                </p>
+            </form>
+        </div>
+
+    </div>
+  </body>
+</html>

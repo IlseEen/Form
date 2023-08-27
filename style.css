@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    background-color: hsl(210, 6%, 14%);
+    color: hsl(129, 13%, 89%);
+    line-height: 1.4;
+    font-family: "Raleway", "PT Sans", Calibri, Tahoma, sans-serif;
+    font-size:larger;
+    height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background-color: rgb(48, 51, 49);
+    margin: auto;
+}
+
+.sidebar {
+    flex: 0.75;
+    height: auto;
+    background-image: url("suus.PNG");
+    background-size: cover;
+    padding: 0px;
+    opacity: 0.7;
+    position: relative;
+}
+
+.logosection {
+    margin: auto;
+    vertical-align: middle;
+    position: absolute;
+    top:60%;
+    background-color: rgba(30, 52, 29, 0.693);
+    width: 100%;
+    display: flex;
+}
+
+#logo {
+    width: 140px;
+    height: auto;
+    opacity: 0.8;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    margin: auto;
+    margin-left: 15px;
+}
+
+.footer {
+    width: 90%;
+    position: absolute;
+    top:90%;
+    color: rgb(243, 247, 243);
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 1px 1px 2px black;
+    margin-right: 5%;
+}
+
+.formulier {
+    flex: 1;
+    height: 100%;
+    background-image: linear-gradient( #78a54a,  #384829);
+    padding: 5vh 30px 5vh 30px;
+    border-left: solid 1px rgb(63, 82, 65);
+}
+
+.introtext {
+    padding: 50px 30px 0px 30px;
+}
+
+.heading {
+    font-size: xx-large;
+    padding: 30px 0px 10px 0px;
+}
+
+.inputpart {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.inputt {
+    width: 45%;
+    padding: 1em 1em;
+}
+
+input[type=text], input[type=email], input[type=password], select {
+    width: 100%;
+    padding: 6px 17px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #079b56;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.button {
+    background-color:  #78a54a;
+    border: solid rgb(200, 210, 201);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30%;
+    margin-top: 7%;
+  }
+
+a:link {
+    color: rgba(17, 248, 4, 0.562);
+}
+a:visited {
+    color: rgb(161, 167, 161);
+}
+a:hover {
+    color: rgb(200, 240, 167);
+}
+a:active {
+    color: blue;
+  }
+
+label {
+    font-size: 15px;
+}
+xs
